@@ -1,6 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Locator from "../screens/Locator";
+import LocatorNavigator from "./LocatorNavigator";
 import Profile from "../screens/Profile";
 import Settings from "../screens/Settings";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
@@ -12,19 +12,17 @@ const TabNavigator = () => {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: '#f59e0b',
+        tabBarInactiveTintColor: '#6F3C28',
       }}
     >
       <Tab.Screen
-        name="Locator"
-        component={Locator}
+        name="LocatorRoot"
+        component={LocatorNavigator}
         options={{
-          tabBarBadge: 10,
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons
-              name="map"
-              color={color}
-              size={size}
-            />
+            <MaterialCommunityIcons name="map" color={color} size={size} />
           ),
         }}
       />
@@ -32,13 +30,8 @@ const TabNavigator = () => {
         name="Profile"
         component={Profile}
         options={{
-          tabBarBadge: 10,
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons
-              name="account"
-              color={color}
-              size={size}
-            />
+            <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
         }}
       />
@@ -46,13 +39,8 @@ const TabNavigator = () => {
         name="Settings"
         component={Settings}
         options={{
-          tabBarBadge: 10,
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons
-              name="cog"
-              color={color}
-              size={size}
-            />
+            <MaterialCommunityIcons name="cog" color={color} size={size} />
           ),
         }}
       />

@@ -1,0 +1,142 @@
+{
+  "farms": [
+    {
+      "title": "Coffee Farm 1",
+      "description": "Lorem ipsum dolor sit amet, consect...",
+      "address": "123 Indang, Cavite",
+      "coffeeTypes": ["Arabica", "Robusta"],
+      "email": "caffeine@caffeine.com",
+      "mobile": "0912345678",
+      "favorite": true,
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 2.5,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        },
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 4,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        }
+      ]
+    },
+    {
+      "title": "Coffee Farm 2",
+      "description": "Lorem ipsum dolor sit amet, consect...",
+      "address": "123 Indang, Cavite",
+      "coffeeTypes": ["Arabica", "Robusta"],
+      "email": "caffeine@caffeine.com",
+      "mobile": "0912345678",
+      "favorite": false,
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 2.5,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        },
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 4,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        }
+      ]
+    },
+    {
+      "title": "Coffee Farm 3",
+      "description": "Lorem ipsum dolor sit amet, consect...",
+      "address": "123 Indang, Cavite",
+      "coffeeTypes": ["Arabica", "Robusta"],
+      "email": "caffeine@caffeine.com",
+      "mobile": "0912345678",
+      "favorite": true,
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 2.5,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        },
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 4,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        }
+      ]
+    },
+    {
+      "title": "Coffee Farm 4",
+      "description": "Lorem ipsum dolor sit amet, consect...",
+      "address": "123 Indang, Cavite",
+      "coffeeTypes": ["Arabica", "Robusta"],
+      "email": "caffeine@caffeine.com",
+      "mobile": "0912345678",
+      "favorite": true,
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 2.5,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        },
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 4,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        }
+      ]
+    },
+    {
+      "title": "Coffee Farm 5",
+      "description": "Lorem ipsum dolor sit amet, consect...",
+      "address": "123 Indang, Cavite",
+      "coffeeTypes": ["Arabica", "Robusta"],
+      "email": "caffeine@caffeine.com",
+      "mobile": "0912345678",
+      "favorite": false,
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 2.5,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        },
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 4,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        }
+      ]
+    },
+    {
+      "title": "Coffee Farm 6",
+      "description": "Lorem ipsum dolor sit amet, consect...",
+      "address": "123 Indang, Cavite",
+      "coffeeTypes": ["Arabica", "Robusta"],
+      "email": "caffeine@caffeine.com",
+      "mobile": "0912345678",
+      "favorite": true,
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 2.5,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        },
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 4,
+          "review": "Lorem ipsum dolor sit amet, consect..."
+        }
+      ]
+    }
+  ]
+}

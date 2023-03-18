@@ -1,0 +1,65 @@
+// Modules
+import React from "react";
+import { ICoffeeFarm } from "../models/components/ICoffeeFarm.interface";
+// Components
+import {
+  Box,
+  HStack,
+  Text,
+  Stack,
+  Heading,
+  AspectRatio,
+  Image,
+  Pressable,
+} from "native-base";
+
+interface IProps {
+  data: ICoffeeFarm;
+  navigation?: any;
+}
+
+const CoffeeCard = ({ data, navigation }: IProps) => {
+  return (
+    <Pressable
+      onPress={() => {
+        navigation.navigate("Farm", { data: data });
+      }}
+    >
+      <HStack
+        w="100%"
+        rounded="lg"
+        overflow="hidden"
+        borderColor="coolGray.200"
+        borderWidth="1"
+        bgColor="gray.50"
+      >
+        <Box w="30%">
+          <AspectRatio w="full" ratio={1}>
+            <Image
+              size="full"
+              source={require("../../assets/caffeine.png")}
+              alt="coffee"
+            />
+          </AspectRatio>
+        </Box>
+        <Stack p="3" space={3} w="70%">
+          <Stack space={1}>
+            <HStack justifyContent="space-between">
+              <Heading size="md">{data?.title}</Heading>
+            </HStack>
+            <Text fontSize="xs">{data?.description}</Text>
+          </Stack>
+          <Text
+            color="coolGray.600"
+            _dark={{ color: "warmGray.200" }}
+            fontSize="xs"
+          >
+            6 mins ago
+          </Text>
+        </Stack>
+      </HStack>
+    </Pressable>
+  );
+};
+
+export default CoffeeCard;
