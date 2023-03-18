@@ -5,7 +5,7 @@ const SignUp = (props: any) => {
   return (
     <View flex="1" p="4">
       <VStack flex="1" w="full" space="2">
-        <Input placeholder="Email" />
+        <Input placeholder="Username" />
         <Input placeholder="Password" />
         <Button onPress={() => props.navigation.goBack()}>
           Sign up

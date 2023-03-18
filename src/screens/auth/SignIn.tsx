@@ -1,21 +1,30 @@
-import React from 'react';
-import { View, Center, VStack, Icon, Text, Input, Button } from 'native-base';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import React from "react";
+import {
+  View,
+  Center,
+  VStack,
+  Input,
+  Button,
+  Image,
+} from "native-base";
 
 const SignIn = (props: any) => {
   return (
     <View flex="1" p="4">
-      <Center flex="1">
-        <Icon as={FontAwesome5} name="coffee" color="primary.600" size="120" mb="2" />
-        <Text fontSize="4xl">Caffeine</Text>
+      <Center flex="1" px="6">
+        <Image
+          size="full"
+          source={require("../../../assets/caffeine.png")}
+          alt="coffee"
+        />
       </Center>
       <VStack flex="1" w="full" space="2">
-        <Input placeholder="Email" />
+        <Input placeholder="Username" />
         <Input placeholder="Password" />
-        <Button onPress={() => props.navigation.navigate('Root')}>
+        <Button onPress={() => props.navigation.navigate("Root")}>
           Log in
         </Button>
-        <Button onPress={() => props.navigation.navigate('SignUp')}>
+        <Button onPress={() => props.navigation.navigate("SignUp")}>
           Create account
         </Button>
       </VStack>
