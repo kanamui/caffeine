@@ -2,6 +2,7 @@ import React from "react";
 import {
   AspectRatio,
   Box,
+  Button,
   HStack,
   Icon,
   IconButton,
@@ -70,7 +71,7 @@ const Farm = ({ route, navigation }: any) => {
       <ScrollView size="full">
         <VStack px="6" py="4" mb="3" borderWidth="1" borderColor="gray.200">
           {data?.title && <Text fontSize="2xl">{data?.title}</Text>}
-          <HStack space="2">
+          <HStack space="2" mb="4">
             <Box pt="0.5">
               <StarRating rating={rating} />
             </Box>
@@ -89,6 +90,13 @@ const Farm = ({ route, navigation }: any) => {
               {data?.reviews?.length || 0} reviews
             </Link>
           </HStack>
+          <Button
+            startIcon={
+              <Icon as={MaterialCommunityIcons} name="directions" size="6" />
+            }
+          >
+            Directions
+          </Button>
         </VStack>
         {data?.address && renderPressable(data.address, "map-marker-outline")}
         {data?.coffeeTypes &&

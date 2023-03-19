@@ -1,10 +1,11 @@
 // Modules
 import React from "react";
 // Components
-import { HStack, Input, Icon } from "native-base";
+import { HStack, Input, Icon, Menu, Pressable } from "native-base";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-const NavigationLocator = () => {
+const NavigationLocator = ({ navigation }: any) => {
   return (
     <HStack
       py="3"
@@ -27,6 +28,31 @@ const NavigationLocator = () => {
           <Icon ml="3" size="4" as={<Ionicons name="search" />} />
         }
       />
+      <Menu
+        w="190"
+        trigger={(triggerProps) => {
+          return (
+            <Pressable accessibilityLabel="Menu" {...triggerProps}>
+              <Icon as={MaterialCommunityIcons} name="dots-vertical" size="6" />
+            </Pressable>
+          );
+        }}
+      >
+        <Menu.Item
+          onPress={() => {
+            navigation.navigate("Settings");
+          }}
+        >
+          Settings
+        </Menu.Item>
+        <Menu.Item
+          onPress={() => {
+            navigation.navigate("AboutUs");
+          }}
+        >
+          About Us
+        </Menu.Item>
+      </Menu>
     </HStack>
   );
 };

@@ -7,7 +7,9 @@ const Layout = (props: any) => {
   const route = useRoute();
   return (
     <Box h="full">
-      {route.name === "Locator" && <NavigationLocator />}
+      {route.name === "Locator" && (
+        <NavigationLocator navigation={props.navigation} />
+      )}
       <HStack flex={1}>
         <ScrollView
           h="full"

@@ -41,7 +41,7 @@ const Reviews = ({ route, navigation }: any) => {
   };
 
   return (
-    <Box size="full" bg="white">
+    <ScrollView size="full" bg="white">
       {/* Header */}
       <VStack
         px="6"
@@ -73,12 +73,10 @@ const Reviews = ({ route, navigation }: any) => {
       </VStack>
 
       {/* Reviews */}
-      <ScrollView size="full">
-        {reviews?.map((el: IReview, key: number) => (
-          <Box key={key}>{renderReview({ data: el })}</Box>
-        ))}
-      </ScrollView>
-    </Box>
+      {reviews?.map((el: IReview, key: number) => (
+        <Box key={key}>{renderReview({ data: el })}</Box>
+      ))}
+    </ScrollView>
   );
 };
 
