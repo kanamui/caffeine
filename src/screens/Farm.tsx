@@ -94,6 +94,9 @@ const Farm = ({ route, navigation }: any) => {
             startIcon={
               <Icon as={MaterialCommunityIcons} name="directions" size="6" />
             }
+            onPress={() => {
+              navigation.navigate("Map");
+            }}
           >
             Directions
           </Button>
