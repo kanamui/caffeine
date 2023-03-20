@@ -47,7 +47,9 @@ const CoffeeCard = ({ data, navigation }: IProps) => {
             <HStack justifyContent="space-between">
               <Heading size="md">{data?.title}</Heading>
             </HStack>
-            <Text fontSize="xs">{data?.description}</Text>
+            <Text fontSize="xs" numberOfLines={1}>
+              {data?.description}
+            </Text>
           </Stack>
           <Text
             color="coolGray.600"

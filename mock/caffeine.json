@@ -2,125 +2,125 @@
   "farms": [
     {
       "title": "Coffee Farm 1",
-      "description": "Lorem ipsum dolor sit amet, consect...",
+      "description": "Exercitation dolore duis amet excepteur anim nulla reprehenderit labore elit elit ut voluptate proident proident.",
       "address": "123 Indang, Cavite",
-      "coffeeTypes": ["Arabica", "Robusta"],
-      "email": "caffeine@caffeine.com",
+      "coffeeTypes": ["Arabica", "Robusta", "Excelsa", "Liberica"],
+      "email": "caffeine1@caffeine.com",
       "mobile": "0912345678",
       "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 2.5,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 4,
+          "review": "Aute dolor ut laborum nisi commodo ex deserunt consectetur consectetur nostrud cupidatat mollit aliqua."
         },
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 4,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 2.5,
+          "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
       ]
     },
     {
       "title": "Coffee Farm 2",
-      "description": "Lorem ipsum dolor sit amet, consect...",
+      "description": "Exercitation dolore duis amet excepteur anim nulla reprehenderit labore elit elit ut voluptate proident proident.",
       "address": "123 Indang, Cavite",
-      "coffeeTypes": ["Arabica", "Robusta"],
-      "email": "caffeine@caffeine.com",
+      "coffeeTypes": ["Arabica", "Robusta", "Excelsa"],
+      "email": "caffeine2@caffeine.com",
       "mobile": "0912345678",
-      "favorite": false,
+      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 2.5,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 4,
+          "review": "Aute dolor ut laborum nisi commodo ex deserunt consectetur consectetur nostrud cupidatat mollit aliqua."
         },
         {
           "user": "John Doe",
           "date": "03/18/2023",
           "rating": 4,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
       ]
     },
     {
       "title": "Coffee Farm 3",
-      "description": "Lorem ipsum dolor sit amet, consect...",
+      "description": "Exercitation dolore duis amet excepteur anim nulla reprehenderit labore elit elit ut voluptate proident proident.",
       "address": "123 Indang, Cavite",
       "coffeeTypes": ["Arabica", "Robusta"],
-      "email": "caffeine@caffeine.com",
+      "email": "caffeine3@caffeine.com",
       "mobile": "0912345678",
       "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 2.5,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 5,
+          "review": "Aute dolor ut laborum nisi commodo ex deserunt consectetur consectetur nostrud cupidatat mollit aliqua."
         },
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 4,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 5,
+          "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
       ]
     },
     {
       "title": "Coffee Farm 4",
-      "description": "Lorem ipsum dolor sit amet, consect...",
+      "description": "Exercitation dolore duis amet excepteur anim nulla reprehenderit labore elit elit ut voluptate proident proident.",
       "address": "123 Indang, Cavite",
-      "coffeeTypes": ["Arabica", "Robusta"],
-      "email": "caffeine@caffeine.com",
+      "coffeeTypes": ["Arabica"],
+      "email": "caffeine4@caffeine.com",
       "mobile": "0912345678",
       "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 2.5,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 3,
+          "review": "Aute dolor ut laborum nisi commodo ex deserunt consectetur consectetur nostrud cupidatat mollit aliqua."
         },
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 4,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 2,
+          "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
       ]
     },
     {
       "title": "Coffee Farm 5",
-      "description": "Lorem ipsum dolor sit amet, consect...",
+      "description": "Exercitation dolore duis amet excepteur anim nulla reprehenderit labore elit elit ut voluptate proident proident.",
       "address": "123 Indang, Cavite",
       "coffeeTypes": ["Arabica", "Robusta"],
-      "email": "caffeine@caffeine.com",
+      "email": "caffeine5@caffeine.com",
       "mobile": "0912345678",
-      "favorite": false,
+      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 2.5,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 1,
+          "review": "Aute dolor ut laborum nisi commodo ex deserunt consectetur consectetur nostrud cupidatat mollit aliqua."
         },
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 4,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 2.5,
+          "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
       ]
     },
     {
       "title": "Coffee Farm 6",
-      "description": "Lorem ipsum dolor sit amet, consect...",
+      "description": "Exercitation dolore duis amet excepteur anim nulla reprehenderit labore elit elit ut voluptate proident proident.",
       "address": "123 Indang, Cavite",
-      "coffeeTypes": ["Arabica", "Robusta"],
-      "email": "caffeine@caffeine.com",
+      "coffeeTypes": ["Arabica", "Robusta", "Excelsa"],
+      "email": "caffeine6@caffeine.com",
       "mobile": "0912345678",
       "favorite": true,
       "reviews": [
@@ -128,13 +128,36 @@
           "user": "John Doe",
           "date": "03/18/2023",
           "rating": 2.5,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "review": "Aute dolor ut laborum nisi commodo ex deserunt consectetur consectetur nostrud cupidatat mollit aliqua."
         },
         {
           "user": "John Doe",
           "date": "03/18/2023",
-          "rating": 4,
-          "review": "Lorem ipsum dolor sit amet, consect..."
+          "rating": 2.5,
+          "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
+        }
+      ]
+    },
+    {
+      "title": "Coffee Farm 7",
+      "description": "Exercitation dolore duis amet excepteur anim nulla reprehenderit labore elit elit ut voluptate proident proident.",
+      "address": "123 Indang, Cavite",
+      "coffeeTypes": ["Arabica", "Robusta", "Excelsa", "Liberica"],
+      "email": "caffeine7@caffeine.com",
+      "mobile": "0912345678",
+      "favorite": true,
+      "reviews": [
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 1,
+          "review": "Aute dolor ut laborum nisi commodo ex deserunt consectetur consectetur nostrud cupidatat mollit aliqua."
+        },
+        {
+          "user": "John Doe",
+          "date": "03/18/2023",
+          "rating": 1.5,
+          "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
       ]
     }

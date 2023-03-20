@@ -4,7 +4,7 @@ import { View, Center, VStack, Input, Button, Image } from "native-base";
 const SignIn = (props: any) => {
   return (
     <View flex="1" p="4" bg="white">
-      <Center flex="1" px="6">
+      <Center flex="1">
         <Image
           size="full"
           source={require("../../../assets/caffeine.png")}
