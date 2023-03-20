@@ -1,6 +1,6 @@
-import React from 'react';
-import { Animated } from 'react-native';
-import { Pressable, View } from 'native-base';
+import React from "react";
+import { Animated } from "react-native";
+import { Pressable, View } from "native-base";
 
 const AnimatedPressable = (props: any) => {
   const animation = new Animated.Value(0);
@@ -23,29 +23,23 @@ const AnimatedPressable = (props: any) => {
     outputRange: ["rgba(0,0,0,0)", "rgba(0,0,0,0.1)"],
   });
   return (
-    <Pressable
-      onPressIn={fadeIn}
-      onPressOut={fadeOut}
-      onPress={props.onPress}
-    >
+    <Pressable onPressIn={fadeIn} onPressOut={fadeOut} onPress={props.onPress}>
       <Animated.View
         style={{
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
+          position: "absolute",
+          width: "100%",
+          height: "100%",
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
           zIndex: 2,
-          backgroundColor: bg
+          backgroundColor: bg,
         }}
       />
-      <View {...props}>
-        {props.children}
-      </View>
+      <View {...props}>{props.children}</View>
     </Pressable>
   );
-}
+};
 
 export default AnimatedPressable;

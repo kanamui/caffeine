@@ -14,7 +14,7 @@ import {
   TextArea,
   VStack,
 } from "native-base";
-import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import { MaterialIcons } from "@expo/vector-icons";
 import StarRating from "../components/StarRating";
 
 const Reviews = ({ route, navigation }: any) => {
@@ -29,7 +29,8 @@ const Reviews = ({ route, navigation }: any) => {
           <HStack space="2">
             <Icon
               size="3xl"
-              as={<MaterialIcons name="account-circle" />}
+              as={MaterialIcons}
+              name="account-circle"
               color="gray.400"
             />
             <VStack>
@@ -67,7 +68,8 @@ const Reviews = ({ route, navigation }: any) => {
             startIcon={
               <Icon
                 size="4"
-                as={<MaterialIcons name="rate-review" />}
+                as={MaterialIcons}
+                name="rate-review"
                 color="white"
               />
             }
@@ -89,7 +91,7 @@ const Reviews = ({ route, navigation }: any) => {
           <Modal.CloseButton />
           <Modal.Header>Write a review</Modal.Header>
           <Modal.Body>
-            <TextArea placeholder="Review..." />
+            <TextArea placeholder="Your review..." autoCompleteType="" />
           </Modal.Body>
           <Modal.Footer>
             <Button.Group space={2}>

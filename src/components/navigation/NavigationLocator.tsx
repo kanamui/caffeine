@@ -1,9 +1,15 @@
 // Modules
 import React from "react";
 // Components
-import { HStack, Input, Icon, Menu, Pressable } from "native-base";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import Ionicons from "react-native-vector-icons/Ionicons";
+import {
+  HStack,
+  Icon,
+  Input,
+  Menu,
+  Pressable,
+  SearchIcon,
+} from "native-base";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const NavigationLocator = ({ navigation }: any) => {
   return (
@@ -24,9 +30,7 @@ const NavigationLocator = ({ navigation }: any) => {
         h="9"
         borderRadius="10"
         fontSize="16"
-        InputLeftElement={
-          <Icon ml="3" size="4" as={<Ionicons name="search" />} />
-        }
+        InputLeftElement={<SearchIcon ml="3" size="4" />}
       />
       <Menu
         w="190"

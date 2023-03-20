@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useRoute } from "@react-navigation/native";
 import { Box, HStack, ScrollView } from "native-base";
 import NavigationLocator from "../components/navigation/NavigationLocator";

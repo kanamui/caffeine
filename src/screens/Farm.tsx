@@ -3,6 +3,7 @@ import {
   AspectRatio,
   Box,
   Button,
+  CloseIcon,
   HStack,
   Icon,
   IconButton,
@@ -12,7 +13,7 @@ import {
   Text,
   VStack,
 } from "native-base";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AnimatedPressable from "../components/AnimatedPressable";
 import StarRating from "../components/StarRating";
 
@@ -28,16 +29,19 @@ const Farm = ({ route, navigation }: any) => {
   // Functions
   const renderPressable = (text: string, icon: string) => {
     return (
-      <AnimatedPressable>
-        <HStack px="6" py="3" space="6">
-          <Icon
-            size="5"
-            as={<MaterialCommunityIcons name={icon} />}
-            color="primary.600"
-          />
-          <Text>{text}</Text>
-        </HStack>
-      </AnimatedPressable>
+      text && (
+        <AnimatedPressable>
+          <HStack px="6" py="3" space="6">
+            <Icon
+              size="5"
+              as={MaterialCommunityIcons}
+              name={icon}
+              color="primary.600"
+            />
+            <Text>{text}</Text>
+          </HStack>
+        </AnimatedPressable>
+      )
     );
   };
 
@@ -60,7 +64,7 @@ const Farm = ({ route, navigation }: any) => {
           bgColor="white"
           borderRadius="full"
           shadow="2"
-          icon={<Icon as={MaterialCommunityIcons} name="close" size="6" />}
+          icon={<CloseIcon size="6" />}
           onPress={() => {
             navigation.goBack();
           }}
@@ -101,11 +105,10 @@ const Farm = ({ route, navigation }: any) => {
             Directions
           </Button>
         </VStack>
-        {data?.address && renderPressable(data.address, "map-marker-outline")}
-        {data?.coffeeTypes &&
-          renderPressable(data.coffeeTypes.join(", ").toString(), "coffee")}
-        {data?.email && renderPressable(data.email, "email")}
-        {data?.mobile && renderPressable(data.mobile, "phone")}
+        {renderPressable(data.address, "map-marker-outline")}
+        {renderPressable(data.coffeeTypes.join(", ").toString(), "coffee")}
+        {renderPressable(data.email, "email")}
+        {renderPressable(data.mobile, "phone")}
       </ScrollView>
     </Box>
   );

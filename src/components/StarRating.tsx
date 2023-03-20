@@ -1,10 +1,10 @@
 import React from "react";
 import { HStack, Icon } from "native-base";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const StarRating = ({
   rating = 0,
-  size = 4
+  size = 4,
 }: {
   rating?: number;
   size?: number;
@@ -17,7 +17,8 @@ const StarRating = ({
     <Icon
       key={index}
       size={size}
-      as={<MaterialCommunityIcons name="star" />}
+      as={MaterialCommunityIcons}
+      name="star"
       color="yellow.400"
     />
   ));
@@ -27,7 +28,8 @@ const StarRating = ({
       <Icon
         key={fullStars}
         size={size}
-        as={<MaterialCommunityIcons name="star-half-full" />}
+        as={MaterialCommunityIcons}
+        name="star-half-full"
         color="yellow.400"
       />
     );
@@ -37,7 +39,8 @@ const StarRating = ({
     <Icon
       key={fullStars + halfStars + index}
       size={size}
-      as={<MaterialCommunityIcons name="star-outline" />}
+      as={MaterialCommunityIcons}
+      name="star-outline"
       color="yellow.400"
     />
   ));

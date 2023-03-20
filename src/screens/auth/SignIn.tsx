@@ -1,16 +1,9 @@
 import React from "react";
-import {
-  View,
-  Center,
-  VStack,
-  Input,
-  Button,
-  Image,
-} from "native-base";
+import { View, Center, VStack, Input, Button, Image } from "native-base";
 
 const SignIn = (props: any) => {
   return (
-    <View flex="1" p="4">
+    <View flex="1" p="4" bg="white">
       <Center flex="1" px="6">
         <Image
           size="full"
