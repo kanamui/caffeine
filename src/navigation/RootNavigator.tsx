@@ -2,7 +2,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LocatorNavigator from "./LocatorNavigator";
 import Settings from "../screens/Settings";
-import AboutUs from "../screens/AboutUs";
+import About from "../screens/About";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,8 +21,8 @@ const RootNavigator = () => {
       />
       <Stack.Screen
         options={{ headerShown: true }}
-        name="AboutUs"
-        component={AboutUs}
+        name="About"
+        component={About}
       />
     </Stack.Navigator>
   );

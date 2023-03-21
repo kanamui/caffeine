@@ -6,7 +6,7 @@ import NavigationLocator from "../components/navigation/NavigationLocator";
 const Layout = (props: any) => {
   const route = useRoute();
   return (
-    <Box h="full">
+    <Box h="full" safeAreaBottom>
       {route.name === "Locator" && (
         <NavigationLocator navigation={props.navigation} />
       )}

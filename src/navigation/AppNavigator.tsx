@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <Box size="full" bg="primary.800" safeArea>
+    <Box size="full" bg="primary.800" safeAreaTop>
       <NavigationContainer>
         <Stack.Navigator
           screenOptions={{

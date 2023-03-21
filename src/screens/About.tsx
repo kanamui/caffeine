@@ -1,12 +1,12 @@
 import React from "react";
 import { Center, Heading } from "native-base";
 
-const AboutUs = () => {
+const About = () => {
   return (
     <Center flex="1">
-      <Heading>About Us</Heading>
+      <Heading>About</Heading>
     </Center>
   );
 };
 
-export default AboutUs;
+export default About;

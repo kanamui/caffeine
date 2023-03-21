@@ -11,22 +11,10 @@ const Stack = createNativeStackNavigator();
 
 const LocatorNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
-        options={{ headerShown: false }}
-        name="Locator"
-        component={Locator}
-      />
-      <Stack.Screen
-        options={{ headerShown: false }}
-        name="Farm"
-        component={Farm}
-      />
-      <Stack.Screen
-        options={{ headerShown: true }}
-        name="Map"
-        component={Map}
-      />
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Locator" component={Locator} />
+      <Stack.Screen name="Farm" component={Farm} />
+      <Stack.Screen name="Map" component={Map} />
       <Stack.Screen
         options={{ headerShown: true }}
         name="Reviews"

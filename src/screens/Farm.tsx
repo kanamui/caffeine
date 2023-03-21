@@ -73,7 +73,13 @@ const Farm = ({ route, navigation }: any) => {
 
       {/* Content */}
       <ScrollView size="full">
-        <VStack px="6" py="4" mb="3" borderWidth="1" borderColor="gray.200">
+        <VStack
+          px="6"
+          py="4"
+          mb="3"
+          borderBottomWidth="1"
+          borderColor="gray.200"
+        >
           {data?.title && <Text fontSize="2xl">{data?.title}</Text>}
           <HStack space="2" mb="4">
             <Box pt="0.5">
@@ -99,7 +105,7 @@ const Farm = ({ route, navigation }: any) => {
               <Icon as={MaterialCommunityIcons} name="directions" size="6" />
             }
             onPress={() => {
-              navigation.navigate("Map");
+              navigation.navigate("Map", { data: data?.directions || [] });
             }}
           >
             Directions

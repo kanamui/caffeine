@@ -21,6 +21,24 @@
           "rating": 2.5,
           "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
+      ],
+      "directions": [
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination A"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination B"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination C"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination D"
+        }
       ]
     },
     {
@@ -43,6 +61,24 @@
           "date": "03/18/2023",
           "rating": 4,
           "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
+        }
+      ],
+      "directions": [
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination A"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination B"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination C"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination D"
         }
       ]
     },
@@ -67,6 +103,24 @@
           "rating": 5,
           "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
+      ],
+      "directions": [
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination A"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination B"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination C"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination D"
+        }
       ]
     },
     {
@@ -89,6 +143,24 @@
           "date": "03/18/2023",
           "rating": 2,
           "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
+        }
+      ],
+      "directions": [
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination A"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination B"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination C"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination D"
         }
       ]
     },
@@ -113,6 +185,24 @@
           "rating": 2.5,
           "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
+      ],
+      "directions": [
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination A"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination B"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination C"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination D"
+        }
       ]
     },
     {
@@ -136,6 +226,24 @@
           "rating": 2.5,
           "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
         }
+      ],
+      "directions": [
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination A"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination B"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination C"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination D"
+        }
       ]
     },
     {
@@ -158,6 +266,24 @@
           "date": "03/18/2023",
           "rating": 1.5,
           "review": "Aute elit officia duis Lorem cupidatat in commodo nisi incididunt dolore fugiat sint Lorem. Aliqua excepteur do Lorem adipisicing ea veniam et consectetur. Non laborum mollit enim officia. Eiusmod amet et adipisicing officia Lorem reprehenderit ad proident pariatur ea aute laborum Lorem sit. Nostrud voluptate velit nulla ullamco. Voluptate enim consectetur ea dolor voluptate."
+        }
+      ],
+      "directions": [
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination A"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination B"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination C"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination D"
         }
       ]
     }

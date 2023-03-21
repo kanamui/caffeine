@@ -51,10 +51,10 @@ const NavigationLocator = ({ navigation }: any) => {
         </Menu.Item>
         <Menu.Item
           onPress={() => {
-            navigation.navigate("AboutUs");
+            navigation.navigate("About");
           }}
         >
-          About Us
+          About
         </Menu.Item>
       </Menu>
     </HStack>
