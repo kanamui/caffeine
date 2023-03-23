@@ -7,7 +7,6 @@
       "coffeeTypes": ["Arabica", "Robusta", "Excelsa", "Liberica"],
       "email": "caffeine1@caffeine.com",
       "mobile": "0912345678",
-      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
@@ -48,7 +47,6 @@
       "coffeeTypes": ["Arabica", "Robusta", "Excelsa"],
       "email": "caffeine2@caffeine.com",
       "mobile": "0912345678",
-      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
@@ -79,6 +77,14 @@
         {
           "type": "Bus",
           "instruction": "Get on bus, get off on Destination D"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination E"
+        },
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination F"
         }
       ]
     },
@@ -89,7 +95,6 @@
       "coffeeTypes": ["Arabica", "Robusta"],
       "email": "caffeine3@caffeine.com",
       "mobile": "0912345678",
-      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
@@ -120,6 +125,22 @@
         {
           "type": "Bus",
           "instruction": "Get on bus, get off on Destination D"
+        },
+        {
+          "type": "Walk",
+          "instruction": "Walk (70m) towards Destination E"
+        },
+        {
+          "type": "Tricycle",
+          "instruction": "Get on tricycle, get off on Destination F"
+        },
+        {
+          "type": "Jeep",
+          "instruction": "Get on jeep, get off on Destination G"
+        },
+        {
+          "type": "Bus",
+          "instruction": "Get on bus, get off on Destination H"
         }
       ]
     },
@@ -130,7 +151,6 @@
       "coffeeTypes": ["Arabica"],
       "email": "caffeine4@caffeine.com",
       "mobile": "0912345678",
-      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
@@ -171,7 +191,6 @@
       "coffeeTypes": ["Arabica", "Robusta"],
       "email": "caffeine5@caffeine.com",
       "mobile": "0912345678",
-      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
@@ -212,7 +231,6 @@
       "coffeeTypes": ["Arabica", "Robusta", "Excelsa"],
       "email": "caffeine6@caffeine.com",
       "mobile": "0912345678",
-      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",
@@ -253,7 +271,6 @@
       "coffeeTypes": ["Arabica", "Robusta", "Excelsa", "Liberica"],
       "email": "caffeine7@caffeine.com",
       "mobile": "0912345678",
-      "favorite": true,
       "reviews": [
         {
           "user": "John Doe",

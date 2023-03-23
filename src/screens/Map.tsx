@@ -2,10 +2,12 @@ import React from "react";
 import {
   ArrowBackIcon,
   Box,
+  Flex,
   Heading,
   HStack,
   IconButton,
   ScrollView,
+  Text,
   VStack,
 } from "native-base";
 import TransportIcon from "../components/TransportIcon";
@@ -43,22 +45,28 @@ const Map = ({ route, navigation }: any) => {
           {/* Summary */}
           <HStack
             w="full"
-            p="4"
+            px="4"
+            pb="4"
             bg="white"
             alignItems="center"
             justifyContent="space-between"
           >
-            <HStack space="4">
-              <TransportIcon type="Tricycle" />
-              <TransportIcon type="Jeep" />
-              <TransportIcon type="Bus" />
-            </HStack>
-            <Heading>3.5 hrs</Heading>
+            <Flex w="75%" flexDirection="row" flexWrap="wrap">
+              {data.map(
+                (el: any, key: number) =>
+                  el.type !== "Walk" && (
+                    <Box key={key}>
+                      <TransportIcon type={el.type} />
+                    </Box>
+                  )
+              )}
+            </Flex>
+            <Text mt="4" fontSize="xl" bold>3.5 hrs</Text>
           </HStack>
 
           {/* Instructions */}
           <VStack space="4" p="4">
-            {data.map((el: any, key: any) => (
+            {data.map((el: any, key: number) => (
               <Box key={key}>
                 <TransportCard type={el.type} instruction={el.instruction} />
               </Box>

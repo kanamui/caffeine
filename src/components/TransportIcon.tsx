@@ -14,7 +14,7 @@ const TransportIcon = ({
   const icon = getTransportIcon(type);
 
   return icon ? (
-    <Box p="2" bg="primary.600" borderRadius="full">
+    <Box p="2" mt="4" mr="2" bg="primary.600" borderRadius="full">
       <Icon as={MaterialCommunityIcons} name={icon} size={size} color="white" />
     </Box>
   ) : null;
