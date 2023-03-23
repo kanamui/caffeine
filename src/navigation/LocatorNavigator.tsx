@@ -15,11 +15,7 @@ const LocatorNavigator = () => {
       <Stack.Screen name="Locator" component={Locator} />
       <Stack.Screen name="Farm" component={Farm} />
       <Stack.Screen name="Map" component={Map} />
-      <Stack.Screen
-        options={{ headerShown: true }}
-        name="Reviews"
-        component={Reviews}
-      />
+      <Stack.Screen name="Reviews" component={Reviews} />
     </Stack.Navigator>
   );
 };

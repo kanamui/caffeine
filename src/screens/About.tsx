@@ -1,11 +1,15 @@
 import React from "react";
 import { Center, Heading } from "native-base";
+import Navigation from "../components/navigation/Navigation";
 
-const About = () => {
+const About = (props: any) => {
   return (
-    <Center flex="1">
-      <Heading>About</Heading>
-    </Center>
+    <>
+      <Navigation {...props} />
+      <Center flex="1">
+        <Heading>Settings</Heading>
+      </Center>
+    </>
   );
 };
 

@@ -8,22 +8,10 @@ const Stack = createNativeStackNavigator();
 
 const RootNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
-        options={{ headerShown: false }}
-        name="LocatorRoot"
-        component={LocatorNavigator}
-      />
-      <Stack.Screen
-        options={{ headerShown: true }}
-        name="Settings"
-        component={Settings}
-      />
-      <Stack.Screen
-        options={{ headerShown: true }}
-        name="About"
-        component={About}
-      />
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="LocatorRoot" component={LocatorNavigator} />
+      <Stack.Screen name="Settings" component={Settings} />
+      <Stack.Screen name="About" component={About} />
     </Stack.Navigator>
   );
 };

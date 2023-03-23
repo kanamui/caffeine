@@ -16,10 +16,11 @@ import {
 } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 import StarRating from "../components/StarRating";
+import Navigation from "../components/navigation/Navigation";
 
-const Reviews = ({ route, navigation }: any) => {
+const Reviews = (props: any) => {
   // Variables
-  const { rating, reviews } = route.params;
+  const { rating, reviews } = props.route.params;
   const [showModal, setShowModal] = useState(false);
 
   const renderReview = ({ data }: { data: IReview }) => {
@@ -46,11 +47,12 @@ const Reviews = ({ route, navigation }: any) => {
 
   return (
     <>
+      <Navigation {...props} />
       <ScrollView size="full" bg="white">
         {/* Header */}
         <VStack
           px="6"
-          pb="4"
+          py="4"
           space="4"
           borderBottomWidth="1"
           borderBottomColor="gray.200"

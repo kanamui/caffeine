@@ -22,8 +22,6 @@ const NavigationLocator = (props: any) => {
       justifyContent="space-between"
       px={{ base: 4, md: 8 }}
       bg="primary.800"
-      borderBottomColor="gray.200"
-      borderBottomWidth="1"
     >
       <Input
         flex="1"
