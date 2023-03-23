@@ -1,14 +1,7 @@
 // Modules
 import React from "react";
 // Components
-import {
-  HStack,
-  Icon,
-  Input,
-  Menu,
-  Pressable,
-  SearchIcon,
-} from "native-base";
+import { HStack, Icon, Input, Menu, Pressable, SearchIcon } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const NavigationLocator = (props: any) => {
@@ -40,7 +33,12 @@ const NavigationLocator = (props: any) => {
         trigger={(triggerProps) => {
           return (
             <Pressable accessibilityLabel="Menu" {...triggerProps}>
-              <Icon as={MaterialCommunityIcons} name="dots-vertical" size="6" />
+              <Icon
+                as={MaterialCommunityIcons}
+                name="dots-vertical"
+                size="6"
+                color="white"
+              />
             </Pressable>
           );
         }}

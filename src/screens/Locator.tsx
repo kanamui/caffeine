@@ -32,7 +32,7 @@ const Locator = (props: any) => {
         navigation={props.navigation}
       />
       {filteredData.length ? (
-        <Layout navigation={props.navigation}>
+        <Layout>
           <VStack space="2">
             {filteredData.map((el: any, key: number) => {
               return (
