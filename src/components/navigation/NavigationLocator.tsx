@@ -11,7 +11,9 @@ import {
 } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const NavigationLocator = ({ navigation }: any) => {
+const NavigationLocator = (props: any) => {
+  const { navigation, value, handleSearchChange } = props;
+
   return (
     <HStack
       py="3"
@@ -31,6 +33,9 @@ const NavigationLocator = ({ navigation }: any) => {
         borderRadius="10"
         fontSize="16"
         InputLeftElement={<SearchIcon ml="3" size="4" />}
+        value={value}
+        onChangeText={handleSearchChange}
+        color="white"
       />
       <Menu
         w="190"

@@ -47,17 +47,10 @@ const CoffeeCard = ({ data, navigation }: IProps) => {
             <HStack justifyContent="space-between">
               <Heading size="md">{data?.title}</Heading>
             </HStack>
-            <Text fontSize="xs" numberOfLines={1}>
+            <Text fontSize="xs" numberOfLines={2}>
               {data?.description}
             </Text>
           </Stack>
-          <Text
-            color="coolGray.600"
-            _dark={{ color: "warmGray.200" }}
-            fontSize="xs"
-          >
-            6 mins ago
-          </Text>
         </Stack>
       </HStack>
     </Pressable>

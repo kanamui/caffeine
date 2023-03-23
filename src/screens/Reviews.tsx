@@ -109,7 +109,7 @@ const Reviews = ({ route, navigation }: any) => {
                   setShowModal(false);
                 }}
               >
-                Save
+                Submit
               </Button>
             </Button.Group>
           </Modal.Footer>
