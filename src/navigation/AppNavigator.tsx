@@ -3,6 +3,7 @@ import { Box } from "native-base";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import RootNavigator from "./RootNavigator";
+import AdminNavigator from "./AdminNavigator";
 import AuthNavigator from "./AuthNavigator";
 
 const Stack = createNativeStackNavigator();
@@ -18,6 +19,7 @@ const AppNavigator = () => {
         >
           <Stack.Screen name="Auth" component={AuthNavigator} />
           <Stack.Screen name="Root" component={RootNavigator} />
+          <Stack.Screen name="AdminRoot" component={AdminNavigator} />
         </Stack.Navigator>
       </NavigationContainer>
     </Box>

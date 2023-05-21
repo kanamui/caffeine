@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 // Components
 import { Center, FlatList, Heading } from "native-base";
-import NavigationLocator from "../components/navigation/NavigationLocator";
-import CoffeeCard from "../components/CoffeeCard";
-import caffeine from "../../mock/caffeine.json";
+import NavigationAdmin from "../../components/navigation/NavigationAdmin";
+import DirectoryCard from "../../components/DirectoryCard";
+import caffeine from "../../../mock/caffeine.json";
 
-const Locator = (props: any) => {
+const Directory = (props: any) => {
   // Variables
   const data = JSON.parse(JSON.stringify(caffeine))?.farms || [];
 
@@ -25,7 +25,7 @@ const Locator = (props: any) => {
 
   return (
     <>
-      <NavigationLocator
+      <NavigationAdmin
         value={search}
         onChangeText={handleSearchChange}
         navigation={props.navigation}
@@ -35,7 +35,7 @@ const Locator = (props: any) => {
           p={4}
           data={filteredData}
           renderItem={(item: any) => (
-            <CoffeeCard
+            <DirectoryCard
               data={{ ...item?.item }}
               navigation={props.navigation}
             />
@@ -50,4 +50,4 @@ const Locator = (props: any) => {
   );
 };
 
-export default Locator;
+export default Directory;

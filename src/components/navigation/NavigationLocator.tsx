@@ -4,9 +4,17 @@ import React from "react";
 import { HStack, Icon, Input, Menu, Pressable, SearchIcon } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const NavigationLocator = (props: any) => {
-  const { navigation, value, handleSearchChange } = props;
+interface INavigationLocator {
+  navigation: any;
+  value?: string | undefined;
+  onChangeText?: (text: string) => void;
+}
 
+const NavigationLocator = ({
+  navigation,
+  value,
+  onChangeText,
+}: INavigationLocator) => {
   return (
     <HStack
       py="3"
@@ -25,7 +33,7 @@ const NavigationLocator = (props: any) => {
         fontSize="16"
         InputLeftElement={<SearchIcon ml="3" size="4" />}
         value={value}
-        onChangeText={handleSearchChange}
+        onChangeText={onChangeText}
         color="white"
       />
       <Menu
