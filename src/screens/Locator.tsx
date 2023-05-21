@@ -1,7 +1,7 @@
 // Modules
 import React, { useState } from "react";
 // Components
-import { Box, Center, Heading, VStack } from "native-base";
+import { Box, Center, FlatList, Heading, VStack } from "native-base";
 import NavigationLocator from "../components/navigation/NavigationLocator";
 import Layout from "../layouts/Layout";
 import CoffeeCard from "../components/CoffeeCard";
@@ -32,17 +32,16 @@ const Locator = (props: any) => {
         navigation={props.navigation}
       />
       {filteredData.length ? (
-        <Layout>
-          <VStack space="2">
-            {filteredData.map((el: any, key: number) => {
-              return (
-                <Box key={key}>
-                  <CoffeeCard data={{ ...el }} navigation={props.navigation} />
-                </Box>
-              );
-            })}
-          </VStack>
-        </Layout>
+        <FlatList
+          p={4}
+          data={filteredData}
+          renderItem={(item: any) => (
+            <CoffeeCard
+              data={{ ...item?.item }}
+              navigation={props.navigation}
+            />
+          )}
+        />
       ) : (
         <Center flex="1" bg="white">
           <Heading color="gray.500">No results found</Heading>

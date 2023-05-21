@@ -27,6 +27,7 @@ const CoffeeCard = ({ data, navigation }: IProps) => {
     >
       <HStack
         w="100%"
+        mb="2"
         rounded="lg"
         overflow="hidden"
         borderColor="coolGray.200"
