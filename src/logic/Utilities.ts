@@ -1,6 +1,6 @@
-import { ITransport } from "../models/ITransport.interface"
+import { ITransportType } from "../models/ITransport.interface"
 
-export const getTransportIcon = (type: ITransport) => {
+export const getTransportIcon = (type: ITransportType) => {
   switch (type) {
     case "Walk":
       return "walk";

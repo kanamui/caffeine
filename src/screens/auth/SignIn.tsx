@@ -14,7 +14,7 @@ const SignIn = (props: any) => {
       <VStack flex="1" w="full" space="2">
         <Input placeholder="Username" />
         <Input placeholder="Password" />
-        <Button onPress={() => props.navigation.navigate("Root")}>
+        <Button onPress={() => props.navigation.navigate("AdminRoot")}>
           Log in
         </Button>
         <Button onPress={() => props.navigation.navigate("SignUp")}>

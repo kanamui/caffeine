@@ -46,6 +46,12 @@ const Directory = (props: any) => {
           <Heading color="gray.500">No results found</Heading>
         </Center>
       )}
+      {/* <Fab
+        renderInPortal={false}
+        shadow={2}
+        size="sm"
+        icon={<AddIcon size="sm" />}
+      /> */}
     </>
   );
 };

@@ -1,6 +1,6 @@
 // Modules
 import React from "react";
-import { ICoffeeFarm } from "../models/components/ICoffeeFarm.interface";
+import { IFarm } from "../models/IFarm.interface";
 // Components
 import {
   Box,
@@ -14,7 +14,7 @@ import {
 } from "native-base";
 
 interface IProps {
-  data: ICoffeeFarm;
+  data: IFarm;
   navigation?: any;
 }
 

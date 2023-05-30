@@ -1,10 +1,10 @@
 import React from "react";
-import { ITransportCard } from "../models/components/ITransportCard.interface";
+import { ITransport } from "../models/ITransport.interface";
 import { getTransportIcon } from "../logic/Utilities";
 import { Box, HStack, Icon, Text, VStack } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const TransportCard = ({ type, instruction }: ITransportCard) => {
+const TransportCard = ({ type, instruction }: ITransport) => {
   const icon = getTransportIcon(type);
 
   return icon ? (

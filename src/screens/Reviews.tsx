@@ -23,7 +23,7 @@ const Reviews = (props: any) => {
   const { rating, reviews } = props.route.params;
   const [showModal, setShowModal] = useState(false);
 
-  const renderReview = ({ data }: { data: IReview }) => {
+  const renderReview = (data: IReview) => {
     return (
       <Box p="4" borderBottomWidth="1" borderBottomColor="gray.200">
         <VStack space="2">
@@ -82,8 +82,8 @@ const Reviews = (props: any) => {
         </VStack>
 
         {/* Reviews */}
-        {reviews?.map((el: IReview, key: number) => (
-          <Box key={key}>{renderReview({ data: el })}</Box>
+        {reviews?.map((review: IReview, key: number) => (
+          <Box key={key}>{renderReview(review)}</Box>
         ))}
       </ScrollView>
 

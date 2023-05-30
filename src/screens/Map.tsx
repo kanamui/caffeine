@@ -3,7 +3,6 @@ import {
   ArrowBackIcon,
   Box,
   Flex,
-  Heading,
   HStack,
   IconButton,
   ScrollView,
@@ -12,6 +11,7 @@ import {
 } from "native-base";
 import TransportIcon from "../components/TransportIcon";
 import TransportCard from "../components/TransportCard";
+import { ITransport } from "../models/ITransport.interface";
 
 const Map = ({ route, navigation }: any) => {
   const { data } = route.params;
@@ -52,23 +52,25 @@ const Map = ({ route, navigation }: any) => {
             justifyContent="space-between"
           >
             <Flex w="75%" flexDirection="row" flexWrap="wrap">
-              {data.map(
-                (el: any, key: number) =>
-                  el.type !== "Walk" && (
+              {data?.map(
+                (dir: ITransport, key: number) =>
+                  dir?.type !== "Walk" && (
                     <Box key={key}>
-                      <TransportIcon type={el.type} />
+                      <TransportIcon type={dir?.type} />
                     </Box>
                   )
               )}
             </Flex>
-            <Text mt="4" fontSize="xl" bold>3.5 hrs</Text>
+            <Text mt="4" fontSize="xl" bold>
+              3.5 hrs
+            </Text>
           </HStack>
 
           {/* Instructions */}
           <VStack space="4" p="4">
-            {data.map((el: any, key: number) => (
+            {data?.map((dir: ITransport, key: number) => (
               <Box key={key}>
-                <TransportCard type={el.type} instruction={el.instruction} />
+                <TransportCard type={dir?.type} instruction={dir?.instruction} />
               </Box>
             ))}
           </VStack>

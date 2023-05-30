@@ -1,5 +1,5 @@
 import React from "react";
-import { ITransport } from "../models/ITransport.interface";
+import { ITransportType } from "../models/ITransport.interface";
 import { Box, Icon } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { getTransportIcon } from "../logic/Utilities";
@@ -8,7 +8,7 @@ const TransportIcon = ({
   type,
   size = 6,
 }: {
-  type: ITransport;
+  type: ITransportType;
   size?: number;
 }) => {
   const icon = getTransportIcon(type);

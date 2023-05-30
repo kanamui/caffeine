@@ -53,6 +53,9 @@ const NavigationAdmin = ({
             color="white"
           />
         }
+        onPress={() => {
+          navigation.navigate("FarmManager", { action: "Create" });
+        }}
       />
     </HStack>
   );

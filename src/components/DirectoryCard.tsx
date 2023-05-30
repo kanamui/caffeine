@@ -1,6 +1,6 @@
 // Modules
 import React, { useRef, useState } from "react";
-import { ICoffeeFarm } from "../models/components/ICoffeeFarm.interface";
+import { IFarm } from "../models/IFarm.interface";
 // Components
 import {
   HStack,
@@ -10,11 +10,12 @@ import {
   Box,
   AlertDialog,
   Button,
+  Pressable,
 } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 interface IProps {
-  data: ICoffeeFarm;
+  data: IFarm;
   navigation?: any;
 }
 
@@ -27,46 +28,55 @@ const DirectoryCard = ({ data, navigation }: IProps) => {
   const cancelRef = useRef(null);
 
   return (
-    <HStack
-      w="full"
-      mb="2"
-      p="2"
-      rounded="lg"
-      overflow="hidden"
-      borderColor="coolGray.200"
-      borderWidth="1"
-      bgColor="gray.50"
-      alignItems="center"
-      justifyContent="space-between"
-    >
-      <Box flex={1}>
-        <Heading numberOfLines={1} size="sm">
-          {data?.title}
-        </Heading>
-      </Box>
-      <HStack space="1">
-        <IconButton
-          icon={
-            <Icon
-              as={MaterialCommunityIcons}
-              name="pencil-outline"
-              size="lg"
-              color="gray.400"
+    <>
+      <Pressable
+        onPress={() => {
+          navigation.navigate("FarmManager", { data: data, action: "Edit" });
+        }}
+      >
+        <HStack
+          w="full"
+          mb="2"
+          p="2"
+          rounded="lg"
+          overflow="hidden"
+          borderColor="coolGray.200"
+          borderWidth="1"
+          bgColor="gray.50"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <Box flex={1}>
+            <Heading numberOfLines={1} size="sm">
+              {data?.title}
+            </Heading>
+          </Box>
+          <HStack space="1">
+            {/* <IconButton
+              icon={
+                <Icon
+                  as={MaterialCommunityIcons}
+                  name="pencil-outline"
+                  size="lg"
+                  color="gray.400"
+                />
+              }
+            /> */}
+            <IconButton
+              icon={
+                <Icon
+                  as={MaterialCommunityIcons}
+                  name="trash-can-outline"
+                  size="lg"
+                  color="red.600"
+                />
+              }
+              onPress={onOpen}
             />
-          }
-        />
-        <IconButton
-          icon={
-            <Icon
-              as={MaterialCommunityIcons}
-              name="trash-can-outline"
-              size="lg"
-              color="red.600"
-            />
-          }
-          onPress={onOpen}
-        />
-      </HStack>
+          </HStack>
+        </HStack>
+      </Pressable>
+
       <AlertDialog
         leastDestructiveRef={cancelRef}
         isOpen={isOpen}
@@ -95,7 +105,7 @@ const DirectoryCard = ({ data, navigation }: IProps) => {
           </AlertDialog.Footer>
         </AlertDialog.Content>
       </AlertDialog>
-    </HStack>
+    </>
   );
 };
 
