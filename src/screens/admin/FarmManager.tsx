@@ -1,8 +1,16 @@
 import { IFarm } from "../../models/IFarm.interface";
-import { Button, FormControl, Input, KeyboardAvoidingView, ScrollView, Stack } from "native-base";
+import {
+  Button,
+  FormControl,
+  Input,
+  ScrollView,
+  Stack,
+  useToast,
+} from "native-base";
 import Navigation from "../../components/navigation/Navigation";
 import { useState } from "react";
 import MultiSelectDropdown from "../../components/MultiSelectDropdown";
+import ToastAlert from "../../components/ToastAlert";
 
 interface IParams {
   data: IFarm;
@@ -13,6 +21,7 @@ const coffeeTypes: string[] = ["Arabica", "Robusta", "Excelsa", "Liberica"];
 
 const FarmManager = ({ props, route, navigation }: any) => {
   // Hooks
+  const toast = useToast();
   const [selected, setSelected] = useState<string[]>([]);
 
   // Variables
@@ -23,9 +32,31 @@ const FarmManager = ({ props, route, navigation }: any) => {
     setSelected(value);
   };
 
+  const onSubmit = () => {
+    toast.show({
+      render: () => {
+        return (
+          <ToastAlert
+            title={
+              action === "Edit"
+                ? "Farm sucessfully updated"
+                : "Farm sucessfully created"
+            }
+            status="success"
+            onClose={() => toast.closeAll()}
+          />
+        );
+      },
+    });
+    navigation.goBack();
+  };
+
   return (
     <>
-      <Navigation {...props} title={`${action} ${data?.title || "Farm"}`} />
+      <Navigation
+        navigation={navigation}
+        title={`${action} ${data?.title || "Farm"}`}
+      />
       <ScrollView bg="white">
         <FormControl p="4">
           <Stack space="4">
@@ -56,14 +87,24 @@ const FarmManager = ({ props, route, navigation }: any) => {
             </Stack>
             <Stack>
               <FormControl.Label>Email Address</FormControl.Label>
-              <Input value={data?.email} placeholder="Email Address..." size="md" />
+              <Input
+                value={data?.email}
+                placeholder="Email Address..."
+                size="md"
+              />
             </Stack>
             <Stack>
               <FormControl.Label>Phone Number</FormControl.Label>
-              <Input value={data?.mobile} placeholder="Phone Number..." size="md" />
+              <Input
+                value={data?.mobile}
+                placeholder="Phone Number..."
+                size="md"
+              />
             </Stack>
             <Stack mt="4">
-              <Button>{action === "Edit" ? "Update" : "Submit"}</Button>
+              <Button onPress={onSubmit}>
+                {action === "Edit" ? "Update" : "Submit"}
+              </Button>
             </Stack>
           </Stack>
         </FormControl>

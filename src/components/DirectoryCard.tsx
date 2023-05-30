@@ -11,8 +11,10 @@ import {
   AlertDialog,
   Button,
   Pressable,
+  useToast,
 } from "native-base";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import ToastAlert from "./ToastAlert";
 
 interface IProps {
   data: IFarm;
@@ -20,10 +22,27 @@ interface IProps {
 }
 
 const DirectoryCard = ({ data, navigation }: IProps) => {
+  // Hooks
+  const toast = useToast();
   const [isOpen, setIsOpen] = useState(false);
 
+  // Functions
   const onOpen = () => setIsOpen(true);
   const onClose = () => setIsOpen(false);
+  const onDelete = () => {
+    onClose();
+    toast.show({
+      render: () => {
+        return (
+          <ToastAlert
+            title="Farm permanently deleted"
+            status="warning"
+            onClose={() => toast.closeAll()}
+          />
+        );
+      },
+    });
+  };
 
   const cancelRef = useRef(null);
 
@@ -98,7 +117,7 @@ const DirectoryCard = ({ data, navigation }: IProps) => {
               >
                 Cancel
               </Button>
-              <Button colorScheme="danger" onPress={onClose}>
+              <Button colorScheme="danger" onPress={onDelete}>
                 Delete
               </Button>
             </Button.Group>
